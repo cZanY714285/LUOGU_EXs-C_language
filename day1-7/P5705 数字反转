@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+        double n,flo = 0;
+        int bai,shi,ge =0;
+        scanf("%lf",&n);
+        bai = n /100;
+        shi = n/10 - 10 * bai;
+        ge = n/1 - 100 * bai - 10 *shi;
+        flo = n - 100 * bai - 10 *shi - ge;
+        //printf("%f\n",bai);
+        //printf("%f\n",shi);
+        //printf("%f\n",ge);
+        //printf("%f\n",flo);
+        n = flo * 10 + ge * 0.1 + bai*0.001 +shi *0.01;
+        printf("%.3f",n);
+        return 0;
+}
