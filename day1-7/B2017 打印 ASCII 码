@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    char zm;
+    scanf("%c",&zm);
+    printf("%d",zm);
+    return 0;
+}
