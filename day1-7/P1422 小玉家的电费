@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+        int n = 0;
+        double fee = 0;
+        scanf("%d",&n);
+        if (n < 151) {
+                fee = n * 0.4463;
+        }else if (n < 401) {
+                fee = (n - 150) *0.4663 +150 * 0.4463;
+        }else {
+                fee = (n - 400) * 0.5663 +(400-150)*0.4663 +150 * 0.4463;
+        }printf("%.1f",fee);
+        return 0;
+}
