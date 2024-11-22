@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+    int h,r,num =0;
+    double v =0;
+
+    scanf("%d %d",&h,&r);
+    v = 3.14*r*r*h;
+    num = 20000 / v;
+    printf("%d",num +1);
+    return 0;
+}
