@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(){
+        int A,B,C,N = 0;
+        scanf("%d %d %d",&A,&B,&C);
+        N = 0.2 *A + 0.3 *B + 0.5 * C;
+        printf("%d",N);
+        return 0;
+}
