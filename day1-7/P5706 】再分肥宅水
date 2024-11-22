@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int n,num = 0;
+    double t,ml = 0;
+    scanf("%lf %d",&t,&n);
+    num = 2 *n;
+    ml = t/n;
+    printf("%.3f\n",ml);
+    printf("%d",num);
+
+    return 0;
+}
