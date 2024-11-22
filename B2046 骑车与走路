@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    double ride,walk = 0;
+    int dis ;
+    scanf("%d",&dis);
+    ride = 27 + 23 + dis / 3.0;
+    walk = dis / 1.2;
+    if (walk < ride) {
+        printf("Walk");
+    }else if (walk > ride) {
+        printf("Bike");
+    }else {
+        printf("All");
+    }
+    return 0;
+
+}
