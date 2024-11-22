@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+        int i,day,max =0;
+        for ( i = 1; i <= 7; i++) {
+                int sch,aft,sum = 0;
+                scanf("%d %d",&sch,&aft);
+                sum = sch + aft;
+                if (sum > max) {
+                        max = sum;
+                        day = i;
+                }
+        }
+        if (max <= 8) {
+                printf("0");
+        }else {
+                printf("%d",day);
+        }
+        return 0;
+}
