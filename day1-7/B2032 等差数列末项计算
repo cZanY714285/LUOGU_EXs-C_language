@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+// int a[10000] = {0};
+// scanf("%d",&a[i]);
+int main() {
+    int a1,a2,an,n = 0;
+    scanf("%d %d %d",&a1,&a2,&n);
+    an = (2 - n) * a1 + (n- 1) * a2;
+    printf("%d",an);
+    return 0;
+}
