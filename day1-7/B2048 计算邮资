@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int x;
+    char c;
+    scanf("%d %c",&x,&c);
+    int p = 8;
+
+    if (x > 1000) {
+        if (x % 500 == 0) {
+            p += (x - 1000)/ 500 * 4;
+        }else {
+            p += ((x - 1000) / 500 + 1) * 4;
+        }
+    }
+
+    switch(c) {
+        case 'y':
+            p += 5;
+        break;
+        case 'n':
+            p += 0;
+        break;
+    }
+
+    printf("%.d",p);
+    return 0;
+
+}
