@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    char a;
+    scanf("%c",&a);
+    int b;
+    scanf("%d",&b);
+    float c;
+    scanf("%f",&c);
+    double d;
+    scanf("%lf",&d);
+    printf("%c %d %f %lf",a,b,c,d);
+    return 0;
+
+}
