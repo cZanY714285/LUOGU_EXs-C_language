@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int n,i,a,b,c,min,max = 0;
+    scanf("%d %d %d", &a,&b,&c);
+
+    if (a ==b) {
+        min = a;
+        max = c;
+    }else if ( a == c) {
+        min = a;
+        max = b;
+    }else if (b == c) {
+        min = b;
+        max = a;
+    }else if (c < a && c < b) {
+        min = c;
+    }else if (a < b && a < c) {
+        min = a;
+    }else {
+        min = b;
+    }
+
+    if (c > a && c > b) {
+        max = c;
+    }else if (a > b && a > c) {
+        max = a;
+    }else {
+        max = b;
+    }
+    for (i = 2;i <= min;i++) {
+        if (min % i == 0 && max % i == 0) {
+            min /= i;max /= i;
+        }
+    }
+
+    printf("%d/%d", min, max);
+    return 0;
+}
