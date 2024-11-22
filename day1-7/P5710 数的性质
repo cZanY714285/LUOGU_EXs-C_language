@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+// int a[10000] = {0};
+// scanf("%d",&a[i]);
+#include <stdio.h>
+int main() {
+    int n, a = 0, uim = 0, b = 0, z = 0;  // Initialize variables
+    scanf("%d", &n);
+    
+    int isEven = (n % 2 == 0);          // Property 1: Even number
+    int isInRange = (n > 4 && n <= 12); // Property 2: >4 and <=12
+
+    if (isEven && isInRange) {
+        a = 1;
+    }
+    if (isEven || isInRange) {
+        uim = 1;
+    }
+    if (isEven ^ isInRange) {
+        b = 1;
+    }
+    if (!isEven && !isInRange) {
+        z = 1;
+    }
+
+    printf("%d %d %d %d\n", a, uim, b, z);
+    return 0;
+}
+
