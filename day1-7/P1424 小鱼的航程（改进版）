@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+        int x,n,week,day,week_1,km = 0;
+        scanf("%d %d",&x,&n);
+        if (x == 6 || x ==7) {
+                week_1 == 0;
+        }else {
+                week_1 = 6-x;
+        }week = (n + x -8) /7;
+        day = (n +x -8)%7;
+        if (day ==6 || day ==7) {
+                day = 5;
+        }km = (day +week_1 + 5* week)* 250;
+      //  printf("week_1 = %d\n",week_1);
+    //    printf("week = %d\n",week);
+     //   printf("day = %d\n",day);
+
+
+        printf("%d\n",km);
+        return 0;
+}
