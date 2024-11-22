@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+// int a[10000] = {0};
+// scanf("%d",&a[i]);
+int main() {
+    int a = 0;
+    scanf("%d",&a);
+    if (a % 3 == 0 && a % 5 == 0) {
+        printf("YES");
+    }else {
+        printf("NO");
+    }
+    return 0;
+}
