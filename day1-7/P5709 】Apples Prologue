@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int m,t,s,eat = 0;
+    scanf("%d %d %d",&m,&t,&s);
+    if (t == 0) {
+        eat = m;
+    }else if (s >= m * t) {
+        eat = m;
+    }else if (s % t == 0){
+        eat = s / t;
+    }else {
+        eat = s / t + 1;
+    }
+    printf("%d",m - eat);
+    return 0;
+}
