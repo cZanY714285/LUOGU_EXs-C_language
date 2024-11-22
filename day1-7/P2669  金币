@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <limits.h>
+int main(){
+    int k,sum = 0;
+    int temp = 0;
+    int i = 1;
+    scanf("%d",&k);
+    //printf("k = %d\n",k);
+    for (i = 1; i <= k; i++) {
+       // printf("here_1,i = %d\n",i);
+        if (k >=i *( i - 1) / 2 && k <i *( i + 1) / 2) {
+            temp = i-1;
+           // printf("here_2\n");
+           // printf("temp = %d\n ",temp);
+        }
+    }for (i = 1; i <= temp;i++) {
+       // printf("here3\n");
+        sum += i * i;
+        //printf("sum = %d\n ",sum);
+    }//printf("temp = %d\n ",temp);
+    //printf("k - (temp + 1)* temp / 2 = %d \n ",temp * (k - (temp + 1)* temp / 2));
+
+    sum= (temp+1) * (k - (temp+ 1)* temp / 2) + sum;
+
+    printf("%d",sum);
+    return 0;
+}
