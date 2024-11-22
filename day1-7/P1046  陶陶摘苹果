@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(){
+    int i,j = 0;
+    int sum = 0;
+    int a[1000] = {0};
+    int temp[10000] = {0};
+    for (i = 1; i<= 10;i++) {
+        scanf("%d",&a[i]);
+        temp[i] = a[i];
+        //printf("temp[i] = %d\n ",temp[i]);
+    }
+    int h;
+    scanf("%d",&h);
+    //printf("h = %d\n ",h);
+
+    for (j = 1; j<= 10;j++) {
+        if (h+30 >= temp[j]) {
+            sum++;
+            //printf("sum = %d\n ",sum);
+        }
+    }
+
+    printf("%d",sum);
+    return 0;
+}
+
