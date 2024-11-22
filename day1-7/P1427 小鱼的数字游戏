@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a[110];
+    int j,i = 0;
+    while (a[i] != 0) {
+        i++;
+        scanf("%d",&a[i]);
+    }for (j = i - 1; j > 0; j--) {
+        printf("%d ",a[j]);
+        //printf(",,,j = %d\n",j);
+    }
+    return 0;
+}
