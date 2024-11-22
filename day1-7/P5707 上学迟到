@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main(){
+    int hour,min,s,t,v =0;
+    scanf("%d %d",&s,&v);
+    if ( s %v == 0) {
+        t = s / v +10;
+    }else {
+        t = s / v + 11;
+    }
+    //printf("t=%d\n",t);
+    if (t < 60) {
+        min =60 -t;
+        hour = 7;
+    }else {
+        hour =7 - t/60;
+        min = 60- t % 60;
+    }//printf("hour=%d\n",hour);
+    //printf("min=%d\n",min);
+    if (hour < 0) {
+        hour += 24;
+    }
+    if (hour < 10) {
+        printf("0%d:", hour);
+    } else {
+        printf("%d:", hour);
+    }
+
+    if (min < 10) {
+        printf("0%d", min);
+    } else {
+        printf("%d", min);
+    }
+        return 0;
+}
