@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    int num,pl;
+    scanf("%d %d",&num,&pl);
+    printf("%d",num * pl);
+    return 0;
+}
