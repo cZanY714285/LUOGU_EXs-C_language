@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <limits.h>
+
+int main() {
+    int n =0;
+    n = (9 * 9 / 3 /3 )* 3;
+    printf("%d",n);
+    return 0;
+}
