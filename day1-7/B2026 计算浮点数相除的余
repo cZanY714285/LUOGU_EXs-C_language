@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    double a,b;
+    double r = 0;
+    scanf("%lf %lf",&a,&b);
+    for (int i = (int)(a/b);i >= 0;i--) {
+        r = a - i * b;
+        if (r >= 0 && r < b) {
+            printf("%lf",r);
+        }
+    }
+    return 0;
+
+}
