@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    double xa,ya;
+    scanf("%lf %lf",&xa,&ya);
+    double xb,yb;
+    scanf("%lf %lf",&xb,&yb);
+    double n = 0;
+    n = sqrt(pow(xa-xb,2)+pow(ya-yb,2));
+    printf("%.3f",n);
+    return 0;
+
+}
